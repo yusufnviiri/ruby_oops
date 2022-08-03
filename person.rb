@@ -1,9 +1,9 @@
 class Person
   attr_accessor :name, :age, :id
 
-  def initialize(age, name = 'unknown', parent_permission: true)
+  def initialize(age,id, name = 'unknown', parent_permission: true)
     super()
-    @id = rand(1..1000)
+    @id = id
     @name = name
     @age = age
     @parent_permission = parent_permission
