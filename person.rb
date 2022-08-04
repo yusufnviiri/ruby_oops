@@ -1,5 +1,9 @@
-class Person
-  attr_accessor :name, :age, :id
+require './nameable'
+require './capitalize_decorator'
+require './trimmer_decorator'
+
+class Person < Nameable
+  attr_accessor :age, :name, :id
 
   def initialize(age, id, name = 'unknown', parent_permission: true)
     super()
@@ -15,5 +19,9 @@ class Person
 
   def of_age?
     @age >= 18
+  end
+
+  def correct_name
+    @name
   end
 end
