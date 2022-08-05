@@ -77,7 +77,11 @@ end
 def show_rental_details(rentals)
   print 'Person ID'
   selected_person_id = gets.chomp.to_i
+  rentals.each do |rental|
+    next unless rental.person.id == selected_person_id
 
-  puts rentals[selected_person_id].person.name
-  puts rentals[selected_person_id].book.title
+    puts rental.book.title
+    puts rental.person.name
+    puts rental.date
+  end
 end
