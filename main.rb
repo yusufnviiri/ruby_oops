@@ -43,4 +43,4 @@ def options(books, people, rental_details)
   end
 end
 
-main()
+main
