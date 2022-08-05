@@ -9,7 +9,7 @@ def main
 end
 
 def display_all
-  puts 'Welcome to the library'
+  puts 'Welcome to the school library'
   puts ' Please choose a task  basing on the number '
   puts " 1:  Show all books.
            2:  Show all people.
