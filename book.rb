@@ -8,6 +8,7 @@ class Book
   end
 
   def add_rental_details(date, person)
-    Rental.new(date, self, person)
+    Rental.new(date, person, self)
+    rental_details.push(self)
   end
 end

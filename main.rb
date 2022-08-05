@@ -10,7 +10,7 @@ end
 def display_all
   puts 'Welcome to the school library'
   puts ' Please choose a task  basing on the number '
-  puts " 1:  Show all books.
+  puts "   1:  Show all books.
            2:  Show all people.
            3: Create a person
            4: Create a rental
@@ -35,7 +35,7 @@ def options(books, people, rental_details)
     when 5
       add_book(books)
     when 6
-      show_rental_details(rentals)
+      show_rental_details(rental_details)
     else
       break
     end

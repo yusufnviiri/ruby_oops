@@ -26,9 +26,9 @@ end
 def add_people(people)
   print('press 1 to add a student or press 2 to add a teacher')
   person_to_add = gets.chomp.to_i
-  print 'Age?'
+  print 'Age? '
   age = gets.chomp.to_i
-  print 'Name?'
+  print 'Name? '
   name = gets.chomp
 
   case person_to_add
@@ -77,9 +77,7 @@ end
 def show_rental_details(rentals)
   print 'Person ID'
   selected_person_id = gets.chomp.to_i
-  rentals.map do |rental|
-    if rental.person == selected_person_id
-      puts "Date #{rental.date}, Book : #{rental.book.title} by #{rental.book.author}"
-    end
-  end
+
+  puts rentals[selected_person_id].person.name
+  puts rentals[selected_person_id].book.title
 end
